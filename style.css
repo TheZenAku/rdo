@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'HapnaSlabSerif';
+    src: url('./font/HapnaSlabSerif-DemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HapnaSlabSerifBold';
+    src: url('./font/HapnaSlabSerif-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'ChineseRocks';
+    src: url('./font/chinese\ rocks\ rg.otf') format('truetype');
+    font-weight: bold;
+}
+
+body{
+    font-family: HapnaSlabSerif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    background-color: rgba(255, 0, 0, 0.674);
+    backdrop-filter: blur(10px);
+    color: black;
+    width: 100vw;
+    z-index: 100;
+}
+
+.header img{
+    width: 90px;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.3;
+    background-image: url(./img/avatar.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    flex: 1;
+    font-family: ChineseRocks;
+    padding: 10px;
+
+}
+
+.title p{
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    top: 77px;
+    background-color: rgba(0, 0, 0, 0.674);
+    backdrop-filter: blur(10px);
+    border-bottom: solid rgba(255, 0, 0, 0.266);
+    width: 100vw;
+    height: 40px;
+    z-index: 99;
+    justify-content: center;
+}
+
+.menu ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a{
+    padding: 10px;
+}
+
+.menu ul li a:hover{
+    background-color: rgba(255, 0, 0, 0.674);
+    backdrop-filter: blur(10px);
+    color: black;
+
+}
+
+.menu ul li{
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease, background-color 0.5s ease;
+}
+
+.menu ul a:hover {
+    border-bottom: 2px solid rgb(108, 0, 0);
+    color: black;
+}
+
+
+.content {
+    display: flex;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background-image: url(./img/halloween.jpg), linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.025));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.apres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/bounty-hunter-.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info {
+    margin: 50px;
+    width: 500px;
+    background-color: rgba(0, 12, 23, 0.432);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 0.7cm;
+    transition: ease 0.5s;
+}
+
+.info h2{
+    font-family: ChineseRocks;
+}
+
+.info img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.info marquee{
+    background-color: rgb(255, 0, 0);
+    color: black;
+    font-family: HapnaSlabSerifBold;
+    border-radius: 5px;
+}
+
+.info li strong{
+    background-color: red;
+    padding: 3px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    -webkit-text-stroke: .6px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.info li{
+    list-style: none;
+}
+
+.info a{
+    background-color: red;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-family: HapnaSlabSerifBold;
+}
+
+.info h2{
+    background: linear-gradient(rgba(0, 0, 0, 0.363), rgba(255, 255, 255, 0)), 
+                url('./img/grunge-black.jpg');
+    background-size: cover;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#faixa h1{
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(157, 8, 186);
+    border-radius: 10px;
+    color: rgb(255, 111, 0);
+    font-family: HapnaSlabSerifBold;
+    text-shadow: 1.2px 1.2px black;
+    transition: background-color .2s;
+}
+
+#faixa h1:hover{
+    background-color: rgb(255, 0, 255);
+    color: rgb(255, 255, 255);
+
+}
+
+#faixa a{
+    text-decoration: underline rgb(129, 0, 0);
+}
+
+#hw h1{
+    line-height: 40px;
+    border-radius: 10px;
+    transition: background-color .2s;
+
+}
+
+#hw h1:hover{
+    background-color: red;
+    color: black;
+    font-family: HapnaSlabSerifBold;
+}
+
+.footer{
+    display: flex;
+    height: 100px;
+    background-color: black;
+    border-top: solid rgba(255, 255, 255, 0.218);
+}
+
+.sec1{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2{
+    flex: .2;
+    padding: 40px;
+    background-image: url(./img/bhunter.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 10px;
+}
+
+.sec3 {
+    flex: .3;
+}
+
+.sec3 li{
+    display: flex;
+    margin-top: 5px;
+    list-style: none;
+}
+
+.sec3 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    transition: linear 0.2s;
+}
+
+.sec3 li a:hover{
+    color: red;
+}
+
+.sec3 img{
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}
+
+#faixa {
+    background-image: none;
+}
+
+#faixa img{
+    top: 30px;
+    margin-top: 150px;
+}
+
+.info tr img{
+    height: 100px;
+    border-radius: 10px;
+    border: solid 1px white ;
+}
+
+.info table, tr, th, td{
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.514) ;
+    padding: 10px;
+    background-image: url(./img/grunge-black.jpg);
+    background-size: cover;
+    font-size: 20px;
+}
+
+.info table{
+    width: 100%;
+    border-radius: 10px;
+}
